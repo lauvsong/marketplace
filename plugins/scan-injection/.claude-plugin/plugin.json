@@ -1,0 +1,17 @@
+{
+  "name": "scan-injection",
+  "description": "PostToolUse 훅. 외부 콘텐츠(Read/WebFetch/Bash/MCP 결과)의 prompt injection 시도를 탐지해 경고 컨텍스트를 추가하고, 차단은 하지 않는다.",
+  "author": {
+    "name": "lauvsong",
+    "url": "https://github.com/lauvsong"
+  },
+  "homepage": "https://github.com/lauvsong/marketplace",
+  "repository": "https://github.com/lauvsong/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "security",
+    "prompt-injection",
+    "safety"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "guardrail",
+  "description": "PreToolUse 가드레일. policies/default.json 기반으로 위험한 Bash 명령, 보호 파일 접근, 쓰기 모드 MCP 호출을 차단한다.",
+  "author": {
+    "name": "lauvsong",
+    "url": "https://github.com/lauvsong"
+  },
+  "homepage": "https://github.com/lauvsong/marketplace",
+  "repository": "https://github.com/lauvsong/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "security",
+    "guardrail",
+    "safety"
+  ]
+}

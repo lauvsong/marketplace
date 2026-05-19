@@ -1,0 +1,33 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read|Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh ${CLAUDE_PLUGIN_ROOT}/hooks/run_guardrail.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh ${CLAUDE_PLUGIN_ROOT}/hooks/run_scan_commit.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh ${CLAUDE_PLUGIN_ROOT}/hooks/run_guardrail.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

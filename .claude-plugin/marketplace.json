@@ -1,0 +1,61 @@
+{
+  "name": "lauvsong",
+  "owner": {
+    "name": "lauvsong",
+    "url": "https://github.com/lauvsong"
+  },
+  "metadata": {
+    "description": "lauvsong의 개인 플러그인 마켓플레이스",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "guardrail",
+      "source": "./plugins/guardrail",
+      "description": "위험한 Bash 명령, 보호 파일 접근, 쓰기 모드 MCP 호출을 차단하는 PreToolUse 훅. 정책 기본값은 policies/default.json에서 관리.",
+      "author": {
+        "name": "lauvsong"
+      },
+      "homepage": "https://github.com/lauvsong/marketplace",
+      "repository": "https://github.com/lauvsong/marketplace",
+      "license": "MIT",
+      "keywords": [
+        "hooks",
+        "security",
+        "guardrail",
+        "safety"
+      ],
+      "category": "security",
+      "tags": [
+        "hooks",
+        "security",
+        "guardrail"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "name": "scan-injection",
+      "source": "./plugins/scan-injection",
+      "description": "외부 콘텐츠(Read/WebFetch/Bash/MCP 결과)의 prompt injection 시도를 탐지해 경고 컨텍스트를 추가하는 PostToolUse 훅. 차단은 하지 않음.",
+      "author": {
+        "name": "lauvsong"
+      },
+      "homepage": "https://github.com/lauvsong/marketplace",
+      "repository": "https://github.com/lauvsong/marketplace",
+      "license": "MIT",
+      "keywords": [
+        "hooks",
+        "security",
+        "prompt-injection",
+        "safety"
+      ],
+      "category": "security",
+      "tags": [
+        "hooks",
+        "security",
+        "prompt-injection"
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}

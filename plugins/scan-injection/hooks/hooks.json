@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Read|WebFetch|Bash|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh ${CLAUDE_PLUGIN_ROOT}/hooks/run_scan_injection.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
